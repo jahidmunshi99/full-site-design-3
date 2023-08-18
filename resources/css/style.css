@@ -143,7 +143,7 @@ img{
 #hero-content h1{
     font-family: headerfont;
     text-transform: uppercase;
-    font-size: clamp(65px, 6vw, 20px);
+    font-size: clamp(55px, 6vw, 65px);
     white-space: nowrap;
     margin-bottom: 25px;
 }
