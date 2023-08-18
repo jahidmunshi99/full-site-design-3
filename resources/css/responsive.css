@@ -1,0 +1,115 @@
+@media (max-width:1024px){
+    /* About Section */
+    .about-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        row-gap: 5em;
+    }
+    .about-image img{
+        width: 50%;
+    }
+    .process-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .filter-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+    }
+    .filter-images :nth-child(5) {
+        grid-column: 1/2;
+        height: 100%;
+    }
+}
+@media (max-width:950px){
+    h1{
+        font-size: 90%;
+        white-space: nowrap;
+    }
+    h3, h4, h5, h6{
+        font-size: 90%;
+    }
+    p{
+        font-size: 90%;
+    }
+    .logo{
+        padding-left: 15px;
+    }
+    #header-area .container{
+        padding: 0;
+    }
+    #main-menu ul{
+        flex-direction: column;
+    }
+    #main-menu ul li{
+        padding: 15px 0;
+        font-size: 20px;
+    }
+    #main-menu{  
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        z-index: 1001;
+        margin-top: 15px;
+        padding-top: 20px;
+        border-top: 2px solid #00ffaa;
+    }
+    #main-menu.active{
+        display: block;
+    }
+    #humbarger{
+        display: block;
+    }
+    
+}
+@media (max-width:768px){
+
+    /* Experience Section */
+    .experience-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Contact Section */
+    .contact-group {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        align-items: first baseline;
+    }
+}
+@media (max-width:480px){
+    section{
+        padding: 60px 0;
+    }
+    .about-image img {
+        width: 100%;
+    }
+    .process-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .filter-images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #testimonial {
+        background-image: none;
+        padding-top: 0;
+    }
+    .testimonial-group{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+/* Portfolio */
+    .portfolio-filer {
+        margin-top: 46px;
+    }
+}
