@@ -162,7 +162,8 @@ img{
     background: #fff;
 }
 #hero-content span{
-    font-size: 22px;
+    font-size: clamp(15px, 4vw, 22px);
+    line-height: 35px;
 }
 #down-icon{
     position: absolute;
